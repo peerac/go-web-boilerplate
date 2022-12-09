@@ -25,9 +25,7 @@ DB_NAME=
 1. Open root project folder with the terminal and run `go run .`
 2. Open browser, navigate to `localhost:<APP_PORT>`
 
-
-### Note
-If you are on windows, there is a `Makefile` that will build the app and run the app from the binary file.
-To use this:
-1. Create a folder called `bin`
-2. Then run `make start`
+## Setup Hot Reload with [air](https://github.com/cosmtrek/air)
+1. Install air globally `go install github.com/cosmtrek/air@latest`
+2. Run `air init` to generate air.toml file. you can modify the file, refer to the url above.
+3. Run `air` to start the hot reload.

@@ -10,6 +10,7 @@ Makefile
 *.so
 *.dylib
 /bin
+/tmp
 
 # Test binary, built with `go test -c`
 *.test
@@ -20,3 +21,4 @@ Makefile
 # Dependency directories (remove the comment below to include it)
 vendor/
 go.sum
+.air.toml
