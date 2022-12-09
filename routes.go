@@ -16,6 +16,11 @@ func Routes(app *fiber.App) {
 
 	// Home routes
 	app.Get("/dashboard", controllers.HomeController)
-	app.Get("/api", controllers.HomeAPIController)
+
+	// Rest API
+	api := app.Group("api")
+	api.Get("/dashboard", controllers.HomeAPIController)
+	api.Get("/login", controllers.LoginAPIController)
+	api.Get("/register", controllers.RegisterAPIController)
 
 }
