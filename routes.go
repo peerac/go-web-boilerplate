@@ -12,9 +12,9 @@ func Routes(app *fiber.App) {
 
 	// Auth routes
 	app.Get("/login", controllers.LoginViewController)
-	app.Post("/login", controllers.LoginAPIController)
+	app.Post("/login", controllers.LoginHandler)
 	app.Get("/register", controllers.RegisterViewController)
-	app.Post("/register", controllers.RegisterAPIController)
+	app.Post("/register", controllers.RegisterHandler)
 
 	// Home routes
 	app.Get("/dashboard", controllers.HomeController)

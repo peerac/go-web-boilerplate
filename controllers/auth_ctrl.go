@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/gofiber/fiber/v2"
@@ -16,6 +17,24 @@ func LoginViewController(c *fiber.Ctx) error {
 
 func RegisterViewController(c *fiber.Ctx) error {
 	return c.Render("auth/register", fiber.Map{})
+}
+
+/*
+	Business Controller
+*/
+func LoginHandler(c *fiber.Ctx) error {
+	return nil
+}
+
+func RegisterHandler(c *fiber.Ctx) error {
+	fullName := c.FormValue("fullName")
+	emailAddr := c.FormValue("emailAddr")
+	password := c.FormValue("password")
+	confirmPass := c.FormValue("confirmPassword")
+
+	fmt.Println("FORM VALUE: ", fullName, emailAddr, password, confirmPass)
+
+	return nil
 }
 
 /*
@@ -36,7 +55,3 @@ func RegisterAPIController(c *fiber.Ctx) error {
 		"data": " Register API route",
 	})
 }
-
-/*
-	Common Controller
-*/
