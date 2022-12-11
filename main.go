@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"jtik-pnl/pepeta/initilizers"
+	"jtik-pnl/pepeta/initializers"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/logger"
@@ -13,9 +13,9 @@ import (
 )
 
 func init() {
-	initilizers.LoadENV()
-	initilizers.ConnectToDatabase()
-	initilizers.SyncDatabase()
+	initializers.LoadENV()
+	initializers.ConnectToDatabase()
+	initializers.SyncDatabase()
 }
 
 func main() {
