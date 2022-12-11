@@ -6,11 +6,15 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
-func LoginController(c *fiber.Ctx) error {
+/*
+	View Controller
+*/
+
+func LoginViewController(c *fiber.Ctx) error {
 	return c.Render("auth/login", fiber.Map{})
 }
 
-func RegisterController(c *fiber.Ctx) error {
+func RegisterViewController(c *fiber.Ctx) error {
 	return c.Render("auth/register", fiber.Map{})
 }
 
@@ -19,6 +23,9 @@ func RegisterController(c *fiber.Ctx) error {
 */
 
 func LoginAPIController(c *fiber.Ctx) error {
+	// Get user form value
+	// Check username password
+	// If correct, generate JWT, and save login cookies, and redirect to dashboard.
 	return c.Status(http.StatusOK).JSON(fiber.Map{
 		"data": "Login API route",
 	})
@@ -29,3 +36,7 @@ func RegisterAPIController(c *fiber.Ctx) error {
 		"data": " Register API route",
 	})
 }
+
+/*
+	Common Controller
+*/

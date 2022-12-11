@@ -36,8 +36,6 @@ func ConnectToDatabase() {
 	if err != nil {
 		log.Fatalf("DATABASE::failed to connect to database -> err: %v", err)
 	}
-
-	log.Println("DATABASE::successfully connected to database")
 }
 
 func SyncDatabase() {

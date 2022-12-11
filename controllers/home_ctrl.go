@@ -19,3 +19,7 @@ func HomeAPIController(c *fiber.Ctx) error {
 		"data": "dashboard page",
 	})
 }
+
+/*
+	Common Function
+*/

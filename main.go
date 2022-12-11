@@ -35,7 +35,6 @@ func main() {
 
 	//config
 	PORT := os.Getenv("APP_PORT")
-
 	err := app.Listen(fmt.Sprintf(":%v", PORT))
 	if err != nil {
 		log.Fatalf("SERVER:: failed starting the server -> err: %v", err)
