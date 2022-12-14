@@ -1,11 +1,15 @@
-# JTIK-PNL :: PEPETA
-### Aplikasi Pengelolaan Pendaftaran Pembimbing Tugas Akhir 
+# GOLANG-WEB :: Boilerplate for golang web application with bootstrap sb-admin template
 
-## Requirement
-1. Postgres installed on the system
+### Boilerplate full-stack golang web application using bootstrap with sb-admin template 
+
+## Technologies
+1. Golang
+2. Gorm for database
+3. Go-Fiber Framework
+4. Boostrap with SB-Admin template
 
 ## Setup
-1. Clone the project on `https://github.com/JTIK-PNL/pepeta.git`
+1. Clone the project
 2. Open the project with your IDE
 3. Open terminal, navigate to project folder and run `go mod tidy` to install the dependencies
 4. Add `.env` file with the following content:
