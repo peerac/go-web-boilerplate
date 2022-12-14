@@ -24,7 +24,7 @@ func main() {
 
 	// configure app
 	app := fiber.New(fiber.Config{
-		AppName: "jtik-pnl-pepeta",
+		AppName: "go-web-boilerplate",
 		Views:   engine,
 	})
 	app.Use(logger.New())
